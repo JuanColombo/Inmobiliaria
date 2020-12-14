@@ -39,6 +39,8 @@ namespace Inmobiliaria
             this.SubMnuClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.SubMnuPropietarios = new System.Windows.Forms.ToolStripMenuItem();
             this.SunMnuPropiedades = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuListados = new System.Windows.Forms.ToolStripMenuItem();
+            this.SubMnuListadoClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +97,8 @@ namespace Inmobiliaria
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuVerEditar});
+            this.MnuVerEditar,
+            this.MnuListados});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(822, 24);
@@ -133,6 +136,21 @@ namespace Inmobiliaria
             this.SunMnuPropiedades.Text = "Propiedades";
             this.SunMnuPropiedades.Click += new System.EventHandler(this.SunMnuPropiedades_Click);
             // 
+            // MnuListados
+            // 
+            this.MnuListados.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SubMnuListadoClientes});
+            this.MnuListados.Name = "MnuListados";
+            this.MnuListados.Size = new System.Drawing.Size(62, 20);
+            this.MnuListados.Text = "Listados";
+            // 
+            // SubMnuListadoClientes
+            // 
+            this.SubMnuListadoClientes.Name = "SubMnuListadoClientes";
+            this.SubMnuListadoClientes.Size = new System.Drawing.Size(116, 22);
+            this.SubMnuListadoClientes.Text = "Clientes";
+            this.SubMnuListadoClientes.Click += new System.EventHandler(this.SubMnuListadoClientes_Click);
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -169,6 +187,8 @@ namespace Inmobiliaria
         private System.Windows.Forms.ToolStripMenuItem SubMnuClientes;
         private System.Windows.Forms.ToolStripMenuItem SubMnuPropietarios;
         private System.Windows.Forms.ToolStripMenuItem SunMnuPropiedades;
+        private System.Windows.Forms.ToolStripMenuItem MnuListados;
+        private System.Windows.Forms.ToolStripMenuItem SubMnuListadoClientes;
     }
 }
 

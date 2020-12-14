@@ -19,7 +19,7 @@ namespace Inmobiliaria
         }
 
      
-
+        // CARGA DE FORMULARIOS A PARTIR DE BOTONES Y MENUS
         private void btnNuevoCliente_Click(object sender, EventArgs e)
         {
             var frmCargarCliente = new FrmCargarCliente();
@@ -61,6 +61,12 @@ namespace Inmobiliaria
         {
             var frmVerEditarPropiedad = new FrmVerEditarPropiedad();
             frmVerEditarPropiedad.ShowDialog();
+        }
+
+        private void SubMnuListadoClientes_Click(object sender, EventArgs e)
+        {
+            var frmListadoClientes = new FrmListadoClientes();
+            frmListadoClientes.ShowDialog();
         }
     }
 }
