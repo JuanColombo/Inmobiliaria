@@ -42,6 +42,29 @@ namespace Inmobiliaria.Presentacion
        
         }
 
+        private void ActualizarGrilla(string textoABuscar)
+        {
+
+
+            using (var db = new InmobiliariaContext())
+            {
+                //creamos una coleccion para seleccionar los datos que queremos mostrar en la grilla 
+                var propietariosAListar = from propietario in db.Propietario
+                                          select new
+                                          {
+                                              Id = propietario.Id,
+                                              Nombre = propietario.Apellido + " " + propietario.Nombre,
+                                              DNI = propietario.Dni,
+                                              Telefono = propietario.Telefono,
+                                              Domicilio = propietario.Domicilio,
+                                              Localidad = propietario.Localidad
+                                          };
+                //cargamos la grilla con la coleccion creada
+                Grid.DataSource = propietariosAListar.Where(t => t.Nombre.Contains(textoABuscar) || t.DNI.ToString().Contains(textoABuscar)).ToList();
+
+            }
+
+        }
         private void BtnNuevo_Click(object sender, EventArgs e)
         {
             var frmCargarPropietario = new FrmCargarPropietario();
@@ -95,6 +118,11 @@ namespace Inmobiliaria.Presentacion
                 }
                 ActualizarGrilla();
             }
+        }
+
+        private void TxtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarGrilla(TxtBusqueda.Text);
         }
     }
 }

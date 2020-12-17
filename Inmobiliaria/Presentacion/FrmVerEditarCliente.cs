@@ -12,6 +12,7 @@ namespace Inmobiliaria.Presentacion
 {
     public partial class FrmVerEditarClientes : Form
     {
+
         public FrmVerEditarClientes()
         {
             InitializeComponent();
@@ -36,6 +37,28 @@ namespace Inmobiliaria.Presentacion
                                       };
                 //cargamos la grilla con la coleccion creada
                 Grid.DataSource = clientesAListar.ToList();
+
+            }
+
+        }
+        private void ActualizarGrilla(string textoABuscar)
+        {
+
+            using (var db = new InmobiliariaContext())
+            {
+                //creamos una coleccion para seleccionar los datos que queremos mostrar en la grilla 
+                var clientesAListar = from cliente in db.Cliente
+                                      select new
+                                      {
+                                          Id = cliente.Id,
+                                          Nombre = cliente.Apellido + " " + cliente.Nombre,
+                                          DNI = cliente.Dni,
+                                          Telefono = cliente.Telefono,
+                                          Domicilio = cliente.Domicilio,
+                                          Localidad = cliente.Localidad
+                                      };
+                //cargamos la grilla con la coleccion creada
+                Grid.DataSource = clientesAListar.Where(t =>t.Nombre.Contains(textoABuscar)||t.DNI.ToString().Contains(textoABuscar)).ToList();
 
             }
 
@@ -98,12 +121,8 @@ namespace Inmobiliaria.Presentacion
 
         private void TxtBusqueda_TextChanged(object sender, EventArgs e)
         {
-            using (var db = new InmobiliariaContext())
-            {
-                //consultamos en el txtBusqueda si el nombre apellido o email contiene la expresion escrita en la grilla.
-                Grid.DataSource = db.Cliente.Where(t => t.Apellido.Contains(TxtBusqueda.Text) || t.Nombre.Contains(TxtBusqueda.Text)).ToList();
-                ActualizarGrilla();
-            }
+            ActualizarGrilla(TxtBusqueda.Text);
+     
         }
     }
 }

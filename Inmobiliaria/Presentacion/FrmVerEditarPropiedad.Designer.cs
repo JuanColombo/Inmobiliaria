@@ -34,6 +34,8 @@ namespace Inmobiliaria.Presentacion
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.Grid = new System.Windows.Forms.DataGridView();
+            this.TxtBusqueda = new System.Windows.Forms.TextBox();
+            this.LblBuscar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,12 +95,31 @@ namespace Inmobiliaria.Presentacion
             this.Grid.Size = new System.Drawing.Size(776, 252);
             this.Grid.TabIndex = 5;
             // 
+            // TxtBusqueda
+            // 
+            this.TxtBusqueda.Location = new System.Drawing.Point(90, 415);
+            this.TxtBusqueda.Name = "TxtBusqueda";
+            this.TxtBusqueda.Size = new System.Drawing.Size(249, 23);
+            this.TxtBusqueda.TabIndex = 11;
+            this.TxtBusqueda.TextChanged += new System.EventHandler(this.TxtBusqueda_TextChanged);
+            // 
+            // LblBuscar
+            // 
+            this.LblBuscar.AutoSize = true;
+            this.LblBuscar.Location = new System.Drawing.Point(186, 397);
+            this.LblBuscar.Name = "LblBuscar";
+            this.LblBuscar.Size = new System.Drawing.Size(45, 15);
+            this.LblBuscar.TabIndex = 10;
+            this.LblBuscar.Text = "Buscar ";
+            // 
             // FrmVerEditarPropiedad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TxtBusqueda);
+            this.Controls.Add(this.LblBuscar);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnEditar);
@@ -112,6 +133,7 @@ namespace Inmobiliaria.Presentacion
             this.Text = "Ver o Editar Propiedad";
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -122,5 +144,7 @@ namespace Inmobiliaria.Presentacion
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.DataGridView Grid;
+        private System.Windows.Forms.TextBox TxtBusqueda;
+        private System.Windows.Forms.Label LblBuscar;
     }
 }

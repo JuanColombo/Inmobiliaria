@@ -33,6 +33,8 @@
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.TxtBusqueda = new System.Windows.Forms.TextBox();
+            this.LblBuscar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,12 +94,31 @@
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
+            // TxtBusqueda
+            // 
+            this.TxtBusqueda.Location = new System.Drawing.Point(96, 387);
+            this.TxtBusqueda.Name = "TxtBusqueda";
+            this.TxtBusqueda.Size = new System.Drawing.Size(249, 23);
+            this.TxtBusqueda.TabIndex = 9;
+            this.TxtBusqueda.TextChanged += new System.EventHandler(this.TxtBusqueda_TextChanged);
+            // 
+            // LblBuscar
+            // 
+            this.LblBuscar.AutoSize = true;
+            this.LblBuscar.Location = new System.Drawing.Point(192, 369);
+            this.LblBuscar.Name = "LblBuscar";
+            this.LblBuscar.Size = new System.Drawing.Size(45, 15);
+            this.LblBuscar.TabIndex = 8;
+            this.LblBuscar.Text = "Buscar ";
+            // 
             // FrmVerEditarPropietario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TxtBusqueda);
+            this.Controls.Add(this.LblBuscar);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnEditar);
@@ -111,6 +132,7 @@
             this.Text = "Ver Editar Propietario";
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -121,6 +143,8 @@
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.TextBox TxtBusqueda;
+        private System.Windows.Forms.Label LblBuscar;
     }
 }
 
