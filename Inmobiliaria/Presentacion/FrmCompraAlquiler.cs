@@ -68,7 +68,7 @@ namespace Inmobiliaria.Presentacion
                 detallecompraalquier.FechaInicio = DtpFechaInicioOVenta.Value.Date;
                 detallecompraalquier.FechaFin = DtpFechaFin.Value.Date;
                 detallecompraalquier.PrecioAlquiler = (double)NumUpDownAlquiler.Value;
-                detallecompraalquier.PrecioVenta = (double)NumUpDownVenta.Value;
+                detallecompraalquier.PrecioVenta = (double)NumUpDownVenta.Value; 
 
                 db.DetalleCompraAlquiler.Add(detallecompraalquier);
 
@@ -77,6 +77,28 @@ namespace Inmobiliaria.Presentacion
                 MessageBox.Show("La operación fue realizada con exito");
             }
             this.Close();
+        }
+
+        private void CboAlquilerVenta_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try { 
+            if ((TipoDetalleEnum)CboAlquilerVenta.SelectedValue == TipoDetalleEnum.Alquier) {
+                    LblPrecioVenta.Visible = false;
+                    NumUpDownVenta.Visible = false;
+                    LblPrecioAlquier.Visible = true;
+                    NumUpDownAlquiler.Visible = true;
+
+                }
+            else { 
+                LblPrecioVenta.Visible = true;
+                NumUpDownVenta.Visible = true;
+                LblPrecioAlquier.Visible = false;
+                NumUpDownAlquiler.Visible = false;
+                }
+            }
+            catch {
+               
+            }
         }
     }
 }

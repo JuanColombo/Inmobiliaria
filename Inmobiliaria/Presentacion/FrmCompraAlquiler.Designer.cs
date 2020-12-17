@@ -56,10 +56,11 @@ namespace Inmobiliaria.Presentacion
             // CboAlquilerVenta
             // 
             this.CboAlquilerVenta.FormattingEnabled = true;
-            this.CboAlquilerVenta.Location = new System.Drawing.Point(174, 70);
+            this.CboAlquilerVenta.Location = new System.Drawing.Point(172, 75);
             this.CboAlquilerVenta.Name = "CboAlquilerVenta";
             this.CboAlquilerVenta.Size = new System.Drawing.Size(153, 23);
             this.CboAlquilerVenta.TabIndex = 0;
+            this.CboAlquilerVenta.SelectedValueChanged += new System.EventHandler(this.CboAlquilerVenta_SelectedValueChanged);
             // 
             // label1
             // 
