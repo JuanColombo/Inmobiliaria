@@ -69,6 +69,8 @@ namespace Inmobiliaria.Presentacion
         {
             var frmCargarPropietario = new FrmCargarPropietario();
             frmCargarPropietario.ShowDialog();
+            ActualizarGrilla();
+            Grid.CurrentCell = Grid.Rows[Grid.RowCount - 1].Cells[0];
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

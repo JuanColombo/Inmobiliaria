@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inmobiliaria.Presentacion
 {
+    
     public partial class FrmVerEditarClientes : Form
     {
-
         public FrmVerEditarClientes()
         {
             InitializeComponent();
@@ -68,6 +68,8 @@ namespace Inmobiliaria.Presentacion
         {
             var frmCargarCliente = new FrmCargarCliente();
             frmCargarCliente.ShowDialog();
+            ActualizarGrilla();
+            Grid.CurrentCell = Grid.Rows[Grid.RowCount - 1].Cells[0];
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
