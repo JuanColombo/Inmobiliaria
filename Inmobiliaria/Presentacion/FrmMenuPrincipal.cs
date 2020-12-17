@@ -42,7 +42,13 @@ namespace Inmobiliaria
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult respuesta = MessageBox.Show($"¿Estas seguro que deseas salir ?", "Cerrar Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            //si responde que si, instanciamos al objeto dbContext y eliminamos el tutor a traves del id que obtuvimos.
+            if (respuesta == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void SubMnuClientes_Click(object sender, EventArgs e)
