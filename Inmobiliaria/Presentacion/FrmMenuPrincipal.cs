@@ -68,5 +68,29 @@ namespace Inmobiliaria
             var frmListadoClientes = new FrmListadoClientes();
             frmListadoClientes.ShowDialog();
         }
+
+        private void SubMnuListadoPropietarios_Click(object sender, EventArgs e)
+        {
+            var frmListadoPropietarios = new FrmListadoPropietarios();
+            frmListadoPropietarios.ShowDialog();
+        }
+
+        private void BtnClientes_Click(object sender, EventArgs e)
+        {
+            var frmVerEditarCliente = new FrmVerEditarClientes();
+            frmVerEditarCliente.ShowDialog();
+        }
+
+        private void BtnPropiedades_Click(object sender, EventArgs e)
+        {
+            var frmVerEditarPropiedad = new FrmVerEditarPropiedad();
+            frmVerEditarPropiedad.ShowDialog();
+        }
+
+        private void BtnPropietarios_Click(object sender, EventArgs e)
+        {
+            var frmVerEditarPropietario = new FrmVerEditarPropietario();
+            frmVerEditarPropietario.ShowDialog();
+        }
     }
 }

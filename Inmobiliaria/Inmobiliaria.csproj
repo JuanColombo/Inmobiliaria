@@ -27,6 +27,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DataSetClientes.xsd</DependentUpon>
     </Compile>
+    <Compile Update="DataSetPropietarios.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DataSetPropietarios.xsd</DependentUpon>
+    </Compile>
     <Compile Update="Presentacion\FrmCargarPropietario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +59,10 @@
     <None Update="DataSetClientes.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSetPropietarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPropietarios.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

@@ -6,25 +6,25 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>25.14833cm</Width>
+              <Width>25.4362cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.95567cm</Height>
+              <Height>1.05861cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
                     <Rectangle Name="Rectangle1">
                       <ReportItems>
-                        <Textbox Name="Localidad">
+                        <Textbox Name="Apellido">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Localidad.Value</Value>
+                                  <Value>=Fields!Apellido.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -33,43 +33,10 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Localidad</rd:DefaultName>
-                          <Top>0.14428cm</Top>
-                          <Left>14.56563cm</Left>
+                          <rd:DefaultName>Apellido</rd:DefaultName>
+                          <Top>0.09384cm</Top>
                           <Height>0.6cm</Height>
-                          <Width>2.60583cm</Width>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="Domicilio">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Domicilio.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Domicilio</rd:DefaultName>
-                          <Top>0.17101cm</Top>
-                          <Left>10.46049cm</Left>
-                          <Height>0.6cm</Height>
-                          <Width>3.79646cm</Width>
-                          <ZIndex>1</ZIndex>
+                          <Width>3.15736cm</Width>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -97,11 +64,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Dni</rd:DefaultName>
-                          <Top>0.17101cm</Top>
-                          <Left>7.01965cm</Left>
+                          <Top>0.23495cm</Top>
+                          <Left>6.84327cm</Left>
                           <Height>0.6cm</Height>
                           <Width>3.2591cm</Width>
-                          <ZIndex>2</ZIndex>
+                          <ZIndex>1</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -129,74 +96,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Nombre</rd:DefaultName>
-                          <Top>0.14428cm</Top>
-                          <Left>2.57056cm</Left>
+                          <Top>0.12912cm</Top>
+                          <Left>3.33375cm</Left>
                           <Height>0.6cm</Height>
-                          <Width>4.27271cm</Width>
-                          <ZIndex>3</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="Apellido">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Apellido.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Apellido</rd:DefaultName>
-                          <Top>0.14428cm</Top>
-                          <Height>0.6cm</Height>
-                          <Width>2.5cm</Width>
-                          <ZIndex>4</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="Telefono">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Telefono.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Telefono</rd:DefaultName>
-                          <Top>0.14428cm</Top>
-                          <Left>17.59069cm</Left>
-                          <Height>0.6cm</Height>
-                          <Width>3.00271cm</Width>
-                          <ZIndex>5</ZIndex>
+                          <Width>3.46287cm</Width>
+                          <ZIndex>2</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -225,10 +129,106 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>CondicionIva</rd:DefaultName>
-                          <Top>0.14428cm</Top>
-                          <Left>20.76979cm</Left>
+                          <Top>0.23495cm</Top>
+                          <Left>21.23563cm</Left>
                           <Height>0.6cm</Height>
-                          <Width>3.98166cm</Width>
+                          <Width>3.84055cm</Width>
+                          <ZIndex>3</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Domicilio">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Domicilio.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Domicilio</rd:DefaultName>
+                          <Top>0.23495cm</Top>
+                          <Left>10.2082cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>3.87237cm</Width>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Localidad">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Localidad.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Localidad</rd:DefaultName>
+                          <Top>0.23495cm</Top>
+                          <Left>14.1864cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>3.34667cm</Width>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Telefono">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Telefono.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Telefono</rd:DefaultName>
+                          <Top>0.23495cm</Top>
+                          <Left>17.83542cm</Left>
+                          <Height>0.6cm</Height>
+                          <Width>3.2591cm</Width>
                           <ZIndex>6</ZIndex>
                           <Style>
                             <Border>
@@ -266,11 +266,11 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSetListadoClientes</DataSetName>
-        <Top>0.63155cm</Top>
-        <Left>0.3937cm</Left>
-        <Height>0.95567cm</Height>
-        <Width>25.14833cm</Width>
+        <DataSetName>DataSetListadoPropietarios</DataSetName>
+        <Top>0.03528cm</Top>
+        <Left>0.03528cm</Left>
+        <Height>1.05861cm</Height>
+        <Width>25.4362cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -278,76 +278,18 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.45361in</Height>
+    <Height>2in</Height>
     <Style>
       <BackgroundColor>LightSteelBlue</BackgroundColor>
     </Style>
   </Body>
-  <Width>10.24342in</Width>
+  <Width>10.02814in</Width>
   <Page>
     <PageHeader>
-      <Height>3.00425cm</Height>
+      <Height>3.89917cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="TextBoxTitulo">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>LISTADO DE CLIENTES</Value>
-                  <Style>
-                    <FontFamily>Cambria</FontFamily>
-                    <FontSize>20pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <Top>0.2734cm</Top>
-          <Left>8.17245cm</Left>
-          <Height>0.95814cm</Height>
-          <Width>7.36833cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Line Name="Line1">
-          <Top>1.96603cm</Top>
-          <Left>4.01284cm</Left>
-          <Height>0cm</Height>
-          <Width>15.85829cm</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-          </Style>
-        </Line>
-        <Image Name="ImagenReporte">
-          <Source>Embedded</Source>
-          <Value>inmobiliaria</Value>
-          <Sizing>FitProportional</Sizing>
-          <Top>0.01376cm</Top>
-          <Left>20.30258cm</Left>
-          <Height>2.24083cm</Height>
-          <Width>4.80729cm</Width>
-          <ZIndex>2</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
         <Textbox Name="Textbox3">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -365,11 +307,9 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>2.40425cm</Top>
-          <Left>0.3937cm</Left>
+          <Top>3.08708cm</Top>
           <Height>0.6cm</Height>
           <Width>6.80799cm</Width>
-          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -397,11 +337,11 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>2.43098cm</Top>
-          <Left>7.37807cm</Left>
-          <Height>0.53799cm</Height>
+          <Top>3.12236cm</Top>
+          <Left>6.87855cm</Left>
+          <Height>0.6357cm</Height>
           <Width>3.2591cm</Width>
-          <ZIndex>4</ZIndex>
+          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -429,11 +369,11 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>2.43098cm</Top>
-          <Left>10.743cm</Left>
+          <Top>3.12236cm</Top>
+          <Left>10.24348cm</Left>
           <Height>0.53799cm</Height>
           <Width>3.87237cm</Width>
-          <ZIndex>5</ZIndex>
+          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -461,11 +401,11 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>2.3957cm</Top>
-          <Left>14.92405cm</Left>
+          <Top>3.11381cm</Top>
+          <Left>14.29224cm</Left>
           <Height>0.53799cm</Height>
-          <Width>2.60583cm</Width>
-          <ZIndex>6</ZIndex>
+          <Width>3.27611cm</Width>
+          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -493,11 +433,11 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>2.43098cm</Top>
-          <Left>17.86911cm</Left>
+          <Top>3.12236cm</Top>
+          <Left>17.8707cm</Left>
           <Height>0.53799cm</Height>
           <Width>3.2591cm</Width>
-          <ZIndex>7</ZIndex>
+          <ZIndex>4</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -525,11 +465,11 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>2.43098cm</Top>
-          <Left>21.26932cm</Left>
+          <Top>3.14909cm</Top>
+          <Left>21.27091cm</Left>
           <Height>0.53799cm</Height>
           <Width>3.84055cm</Width>
-          <ZIndex>8</ZIndex>
+          <ZIndex>5</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -540,6 +480,65 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Textbox Name="TextBoxTitulo">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>LISTADO DE PROPIETARIOS</Value>
+                  <Style>
+                    <FontFamily>Cambria</FontFamily>
+                    <FontSize>20pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.78454cm</Top>
+          <Left>5.2003cm</Left>
+          <Height>0.95814cm</Height>
+          <Width>9.19396cm</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Line Name="Line1">
+          <Top>2.20555cm</Top>
+          <Left>2.20486cm</Left>
+          <Height>0cm</Height>
+          <Width>15.85829cm</Width>
+          <ZIndex>7</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </Line>
+        <Image Name="ImagenReporte">
+          <Source>Embedded</Source>
+          <Value>inmobiliaria</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.70514cm</Top>
+          <Left>18.4946cm</Left>
+          <Height>2.24083cm</Height>
+          <Width>4.80729cm</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
       </ReportItems>
       <Style>
         <Border>
@@ -553,17 +552,6 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Line Name="Line2">
-          <Top>0.6591cm</Top>
-          <Left>0.74083cm</Left>
-          <Height>0cm</Height>
-          <Width>23.10787cm</Width>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-          </Style>
-        </Line>
         <Textbox Name="PageNumber">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -571,7 +559,7 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Pagina: </Value>
+                  <Value>Pagina:</Value>
                   <Style />
                 </TextRun>
                 <TextRun>
@@ -583,11 +571,10 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>1.68687cm</Top>
-          <Left>20.52848cm</Left>
+          <Top>1.94cm</Top>
+          <Left>21.6221cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.32563cm</Width>
-          <ZIndex>1</ZIndex>
+          <Width>3.84938cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -617,18 +604,18 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSetClientes">
+    <DataSource Name="DataSetPropietarios">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>638c8859-b12f-42fb-a819-80b30614d57d</rd:DataSourceID>
+      <rd:DataSourceID>82a00d52-994d-4771-af25-64ff7e87a8ec</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSetListadoClientes">
+    <DataSet Name="DataSetListadoPropietarios">
       <Query>
-        <DataSourceName>DataSetClientes</DataSourceName>
+        <DataSourceName>DataSetPropietarios</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -690,12 +677,12 @@ IIf(Fields!CondicionIva.Value=2,"Monotributista","Consumidor Final"))</Value>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSetClientes</rd:DataSetName>
-        <rd:SchemaPath>C:\Inmobiliaria\Inmobiliaria\Inmobiliaria\DataSetClientes.xsd</rd:SchemaPath>
-        <rd:TableName>Cliente</rd:TableName>
+        <rd:DataSetName>DataSetPropietarios</rd:DataSetName>
+        <rd:SchemaPath>C:\Inmobiliaria\Inmobiliaria\Inmobiliaria\DataSetPropietarios.xsd</rd:SchemaPath>
+        <rd:TableName>Propietario</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>ClienteTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>PropietarioTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -1201,5 +1188,5 @@ Q3Rf/5f9rHv+tX/PvY5GbOq/SfbetanQ8qxx2qq8X6f3L8ZrAAAAaMSGuccUKCnrxrVnjWmX4for+5m5
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>14e3c44c-4cea-4b2f-a01d-c36ea947f81c</rd:ReportID>
+  <rd:ReportID>bbb200af-3165-44e8-aa47-dc4da272a47e</rd:ReportID>
 </Report>

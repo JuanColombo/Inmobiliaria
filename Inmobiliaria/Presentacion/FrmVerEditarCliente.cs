@@ -95,5 +95,15 @@ namespace Inmobiliaria.Presentacion
                 ActualizarGrilla();
             }
         }
+
+        private void TxtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            using (var db = new InmobiliariaContext())
+            {
+                //consultamos en el txtBusqueda si el nombre apellido o email contiene la expresion escrita en la grilla.
+                Grid.DataSource = db.Cliente.Where(t => t.Apellido.Contains(TxtBusqueda.Text) || t.Nombre.Contains(TxtBusqueda.Text)).ToList();
+                ActualizarGrilla();
+            }
+        }
     }
 }

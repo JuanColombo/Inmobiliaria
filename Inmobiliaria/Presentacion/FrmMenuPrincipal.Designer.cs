@@ -41,7 +41,13 @@ namespace Inmobiliaria
             this.SunMnuPropiedades = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuListados = new System.Windows.Forms.ToolStripMenuItem();
             this.SubMnuListadoClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.SubMnuListadoPropietarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.BtnClientes = new System.Windows.Forms.ToolStripButton();
+            this.BtnPropiedades = new System.Windows.Forms.ToolStripButton();
+            this.BtnPropietarios = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnNuevoCliente
@@ -49,7 +55,7 @@ namespace Inmobiliaria
             this.btnNuevoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevoCliente.BackColor = System.Drawing.Color.LightGreen;
             this.btnNuevoCliente.ForeColor = System.Drawing.Color.Black;
-            this.btnNuevoCliente.Location = new System.Drawing.Point(631, 27);
+            this.btnNuevoCliente.Location = new System.Drawing.Point(750, 74);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.Size = new System.Drawing.Size(147, 51);
             this.btnNuevoCliente.TabIndex = 0;
@@ -61,7 +67,7 @@ namespace Inmobiliaria
             // 
             this.BtnNuevoPropietario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnNuevoPropietario.BackColor = System.Drawing.Color.LightGreen;
-            this.BtnNuevoPropietario.Location = new System.Drawing.Point(631, 84);
+            this.BtnNuevoPropietario.Location = new System.Drawing.Point(750, 131);
             this.BtnNuevoPropietario.Name = "BtnNuevoPropietario";
             this.BtnNuevoPropietario.Size = new System.Drawing.Size(147, 51);
             this.BtnNuevoPropietario.TabIndex = 1;
@@ -73,7 +79,7 @@ namespace Inmobiliaria
             // 
             this.BtnNuevaPropiedad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnNuevaPropiedad.BackColor = System.Drawing.Color.LightGreen;
-            this.BtnNuevaPropiedad.Location = new System.Drawing.Point(631, 141);
+            this.BtnNuevaPropiedad.Location = new System.Drawing.Point(750, 188);
             this.BtnNuevaPropiedad.Name = "BtnNuevaPropiedad";
             this.BtnNuevaPropiedad.Size = new System.Drawing.Size(147, 51);
             this.BtnNuevaPropiedad.TabIndex = 2;
@@ -86,7 +92,7 @@ namespace Inmobiliaria
             this.BtnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnSalir.BackColor = System.Drawing.Color.LightGreen;
             this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.BtnSalir.Location = new System.Drawing.Point(631, 198);
+            this.BtnSalir.Location = new System.Drawing.Point(750, 245);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(147, 51);
             this.BtnSalir.TabIndex = 3;
@@ -101,7 +107,7 @@ namespace Inmobiliaria
             this.MnuListados});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(822, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(909, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -139,7 +145,8 @@ namespace Inmobiliaria
             // MnuListados
             // 
             this.MnuListados.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SubMnuListadoClientes});
+            this.SubMnuListadoClientes,
+            this.SubMnuListadoPropietarios});
             this.MnuListados.Name = "MnuListados";
             this.MnuListados.Size = new System.Drawing.Size(62, 20);
             this.MnuListados.Text = "Listados";
@@ -147,9 +154,60 @@ namespace Inmobiliaria
             // SubMnuListadoClientes
             // 
             this.SubMnuListadoClientes.Name = "SubMnuListadoClientes";
-            this.SubMnuListadoClientes.Size = new System.Drawing.Size(116, 22);
+            this.SubMnuListadoClientes.Size = new System.Drawing.Size(137, 22);
             this.SubMnuListadoClientes.Text = "Clientes";
             this.SubMnuListadoClientes.Click += new System.EventHandler(this.SubMnuListadoClientes_Click);
+            // 
+            // SubMnuListadoPropietarios
+            // 
+            this.SubMnuListadoPropietarios.Name = "SubMnuListadoPropietarios";
+            this.SubMnuListadoPropietarios.Size = new System.Drawing.Size(137, 22);
+            this.SubMnuListadoPropietarios.Text = "Propietarios";
+            this.SubMnuListadoPropietarios.Click += new System.EventHandler(this.SubMnuListadoPropietarios_Click);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(25, 25);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BtnClientes,
+            this.BtnPropiedades,
+            this.BtnPropietarios});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(909, 47);
+            this.toolStrip1.TabIndex = 5;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // BtnClientes
+            // 
+            this.BtnClientes.Image = ((System.Drawing.Image)(resources.GetObject("BtnClientes.Image")));
+            this.BtnClientes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnClientes.Name = "BtnClientes";
+            this.BtnClientes.Size = new System.Drawing.Size(53, 44);
+            this.BtnClientes.Text = "Clientes";
+            this.BtnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
+            // 
+            // BtnPropiedades
+            // 
+            this.BtnPropiedades.Image = ((System.Drawing.Image)(resources.GetObject("BtnPropiedades.Image")));
+            this.BtnPropiedades.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnPropiedades.Name = "BtnPropiedades";
+            this.BtnPropiedades.Size = new System.Drawing.Size(76, 44);
+            this.BtnPropiedades.Text = "Propiedades";
+            this.BtnPropiedades.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnPropiedades.Click += new System.EventHandler(this.BtnPropiedades_Click);
+            // 
+            // BtnPropietarios
+            // 
+            this.BtnPropietarios.Image = ((System.Drawing.Image)(resources.GetObject("BtnPropietarios.Image")));
+            this.BtnPropietarios.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnPropietarios.Name = "BtnPropietarios";
+            this.BtnPropietarios.Size = new System.Drawing.Size(74, 44);
+            this.BtnPropietarios.Text = "Propietarios";
+            this.BtnPropietarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnPropietarios.Click += new System.EventHandler(this.BtnPropietarios_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -158,7 +216,8 @@ namespace Inmobiliaria
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(822, 450);
+            this.ClientSize = new System.Drawing.Size(909, 540);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnNuevaPropiedad);
             this.Controls.Add(this.BtnNuevoPropietario);
@@ -171,6 +230,8 @@ namespace Inmobiliaria
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,6 +250,11 @@ namespace Inmobiliaria
         private System.Windows.Forms.ToolStripMenuItem SunMnuPropiedades;
         private System.Windows.Forms.ToolStripMenuItem MnuListados;
         private System.Windows.Forms.ToolStripMenuItem SubMnuListadoClientes;
+        private System.Windows.Forms.ToolStripMenuItem SubMnuListadoPropietarios;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton BtnClientes;
+        private System.Windows.Forms.ToolStripButton BtnPropiedades;
+        private System.Windows.Forms.ToolStripButton BtnPropietarios;
     }
 }
 

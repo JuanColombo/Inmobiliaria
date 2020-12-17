@@ -104,7 +104,11 @@ namespace Inmobiliaria.Presentacion
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.BtnNuevo);
             this.Controls.Add(this.Grid);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmVerEditarPropiedad";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ver o Editar Propiedad";
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).EndInit();
             this.ResumeLayout(false);
