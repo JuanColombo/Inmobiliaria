@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Inmobiliaria.Models;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace Inmobiliaria.Presentacion
 {
@@ -15,13 +16,14 @@ namespace Inmobiliaria.Presentacion
     {
         public int? IdEditar { get; set; }
         Cliente cliente = new Cliente();
+        
         public FrmCargarCliente()
         {
             InitializeComponent();
             CargarComboSexo();
             CargarComboIva();
             CargarComboEstadoCivil();
-
+            
         }
         public FrmCargarCliente(int idSeleccionado)
         {
@@ -81,6 +83,7 @@ namespace Inmobiliaria.Presentacion
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
+           
             using (var db = new InmobiliariaContext())
             {
                 //le asignamos a sus propiedades el valor de cada uno de los cuadros de texto
