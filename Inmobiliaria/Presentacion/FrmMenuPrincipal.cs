@@ -92,5 +92,11 @@ namespace Inmobiliaria
             var frmVerEditarPropietario = new FrmVerEditarPropietario();
             frmVerEditarPropietario.ShowDialog();
         }
+
+        private void BtnAlquilerVenta_Click(object sender, EventArgs e)
+        {
+            var frmCompraAlquier = new FrmCompraAlquiler();
+            frmCompraAlquier.ShowDialog();
+        }
     }
 }

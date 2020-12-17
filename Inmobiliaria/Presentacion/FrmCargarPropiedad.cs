@@ -78,6 +78,7 @@ namespace Inmobiliaria.Presentacion
                 propiedades.Valor = (double)NumUpDownValor.Value;
                 propiedades.Disponibilidad = ChkDisponible.Checked;
                 propiedades.PropietarioId = (int)CboPropietario.SelectedValue;
+                
 
                 //si el id del Cliente a editar es nulo agregamos un Cliente Nuevo a la tabla
                 if (IdEditar == null)
