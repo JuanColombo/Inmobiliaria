@@ -21,7 +21,7 @@ namespace Inmobiliaria.Presentacion
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void TxtCodigo_TextChanged(object sender, EventArgs e)
