@@ -39,14 +39,14 @@ namespace Inmobiliaria.Presentacion
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(197, 40);
+            this.txtUsuario.Location = new System.Drawing.Point(163, 25);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(151, 23);
             this.txtUsuario.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(197, 74);
+            this.txtPassword.Location = new System.Drawing.Point(163, 59);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(151, 23);
@@ -55,8 +55,9 @@ namespace Inmobiliaria.Presentacion
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsuario.Location = new System.Drawing.Point(91, 42);
+            this.lblUsuario.Location = new System.Drawing.Point(57, 27);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(66, 27);
             this.lblUsuario.TabIndex = 2;
@@ -65,8 +66,9 @@ namespace Inmobiliaria.Presentacion
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
+            this.lblContraseña.BackColor = System.Drawing.Color.Transparent;
             this.lblContraseña.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblContraseña.Location = new System.Drawing.Point(91, 72);
+            this.lblContraseña.Location = new System.Drawing.Point(57, 57);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(88, 27);
             this.lblContraseña.TabIndex = 3;
@@ -74,9 +76,9 @@ namespace Inmobiliaria.Presentacion
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnIngresar.BackColor = System.Drawing.Color.SlateGray;
             this.btnIngresar.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.btnIngresar.Location = new System.Drawing.Point(96, 127);
+            this.btnIngresar.Location = new System.Drawing.Point(62, 112);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(101, 35);
             this.btnIngresar.TabIndex = 2;
@@ -86,9 +88,9 @@ namespace Inmobiliaria.Presentacion
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCancelar.BackColor = System.Drawing.Color.SlateGray;
             this.btnCancelar.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(247, 127);
+            this.btnCancelar.Location = new System.Drawing.Point(213, 112);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 35);
             this.btnCancelar.TabIndex = 3;
@@ -100,8 +102,9 @@ namespace Inmobiliaria.Presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(466, 216);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(380, 175);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblContraseña);

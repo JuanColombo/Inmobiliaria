@@ -44,8 +44,13 @@ namespace Inmobiliaria.Presentacion
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnCapturarFoto = new System.Windows.Forms.Button();
+            this.BtnIniciarDetenerCamara = new System.Windows.Forms.Button();
+            this.BtnExaminar = new System.Windows.Forms.Button();
+            this.PbxImagen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.NumUpDownValor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtNombre
@@ -58,10 +63,10 @@ namespace Inmobiliaria.Presentacion
             // LblTituloPrincipal
             // 
             this.LblTituloPrincipal.AutoSize = true;
-            this.LblTituloPrincipal.Font = new System.Drawing.Font("Quicksand", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblTituloPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LblTituloPrincipal.Location = new System.Drawing.Point(242, 9);
             this.LblTituloPrincipal.Name = "LblTituloPrincipal";
-            this.LblTituloPrincipal.Size = new System.Drawing.Size(344, 59);
+            this.LblTituloPrincipal.Size = new System.Drawing.Size(327, 46);
             this.LblTituloPrincipal.TabIndex = 15;
             this.LblTituloPrincipal.Text = "Nueva Propiedad";
             // 
@@ -123,10 +128,10 @@ namespace Inmobiliaria.Presentacion
             // ChkDisponible
             // 
             this.ChkDisponible.AutoSize = true;
-            this.ChkDisponible.Font = new System.Drawing.Font("Courgette", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ChkDisponible.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ChkDisponible.Location = new System.Drawing.Point(121, 283);
             this.ChkDisponible.Name = "ChkDisponible";
-            this.ChkDisponible.Size = new System.Drawing.Size(114, 28);
+            this.ChkDisponible.Size = new System.Drawing.Size(118, 28);
             this.ChkDisponible.TabIndex = 22;
             this.ChkDisponible.Text = "Disponible";
             this.ChkDisponible.UseVisualStyleBackColor = true;
@@ -175,12 +180,55 @@ namespace Inmobiliaria.Presentacion
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(540, 236);
+            this.pictureBox1.Location = new System.Drawing.Point(594, 323);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(274, 144);
+            this.pictureBox1.Size = new System.Drawing.Size(157, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
+            // 
+            // BtnCapturarFoto
+            // 
+            this.BtnCapturarFoto.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnCapturarFoto.Location = new System.Drawing.Point(717, 274);
+            this.BtnCapturarFoto.Name = "BtnCapturarFoto";
+            this.BtnCapturarFoto.Size = new System.Drawing.Size(92, 32);
+            this.BtnCapturarFoto.TabIndex = 32;
+            this.BtnCapturarFoto.Text = "Borrar foto";
+            this.BtnCapturarFoto.UseVisualStyleBackColor = true;
+            this.BtnCapturarFoto.Click += new System.EventHandler(this.BtnCapturarFoto_Click_1);
+            // 
+            // BtnIniciarDetenerCamara
+            // 
+            this.BtnIniciarDetenerCamara.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnIniciarDetenerCamara.Location = new System.Drawing.Point(619, 274);
+            this.BtnIniciarDetenerCamara.Name = "BtnIniciarDetenerCamara";
+            this.BtnIniciarDetenerCamara.Size = new System.Drawing.Size(92, 32);
+            this.BtnIniciarDetenerCamara.TabIndex = 31;
+            this.BtnIniciarDetenerCamara.Text = "Iniciar cámara";
+            this.BtnIniciarDetenerCamara.UseVisualStyleBackColor = true;
+            this.BtnIniciarDetenerCamara.Click += new System.EventHandler(this.BtnIniciarDetenerCamara_Click);
+            // 
+            // BtnExaminar
+            // 
+            this.BtnExaminar.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnExaminar.Location = new System.Drawing.Point(538, 274);
+            this.BtnExaminar.Name = "BtnExaminar";
+            this.BtnExaminar.Size = new System.Drawing.Size(75, 32);
+            this.BtnExaminar.TabIndex = 30;
+            this.BtnExaminar.Text = "Examinar";
+            this.BtnExaminar.UseVisualStyleBackColor = true;
+            this.BtnExaminar.Click += new System.EventHandler(this.BtnExaminar_Click);
+            // 
+            // PbxImagen
+            // 
+            this.PbxImagen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PbxImagen.Location = new System.Drawing.Point(563, 85);
+            this.PbxImagen.Name = "PbxImagen";
+            this.PbxImagen.Size = new System.Drawing.Size(199, 183);
+            this.PbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PbxImagen.TabIndex = 29;
+            this.PbxImagen.TabStop = false;
             // 
             // FrmCargarPropiedad
             // 
@@ -188,6 +236,10 @@ namespace Inmobiliaria.Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(841, 450);
+            this.Controls.Add(this.BtnCapturarFoto);
+            this.Controls.Add(this.BtnIniciarDetenerCamara);
+            this.Controls.Add(this.BtnExaminar);
+            this.Controls.Add(this.PbxImagen);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnGuardar);
@@ -210,6 +262,7 @@ namespace Inmobiliaria.Presentacion
             this.Text = "Nueva Propiedad";
             ((System.ComponentModel.ISupportInitialize)(this.NumUpDownValor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,5 +284,9 @@ namespace Inmobiliaria.Presentacion
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnCapturarFoto;
+        private System.Windows.Forms.Button BtnIniciarDetenerCamara;
+        private System.Windows.Forms.Button BtnExaminar;
+        private System.Windows.Forms.PictureBox PbxImagen;
     }
 }

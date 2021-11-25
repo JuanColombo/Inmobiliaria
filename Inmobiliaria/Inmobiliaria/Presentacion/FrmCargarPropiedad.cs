@@ -9,18 +9,21 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-
+using Inmobiliaria.Core;
 
 namespace Inmobiliaria.Presentacion
 {
     public partial class FrmCargarPropiedad : Form
     {
+        //creamos la propiedad para manejar la webcam
+        WebCam webcam;
         public int? IdEditar { get; set; }
         Propiedades propiedades = new Propiedades();
         public FrmCargarPropiedad(Propietario propietario)
         {
             InitializeComponent();
-            CargarComboPropietario(); 
+            CargarComboPropietario();
+            webcam = new WebCam(this, AutoActivate: false, PbxImagen);
             CboPropietario.Enabled = false;
             CboPropietario.SelectedValue = propietario.Id;
         }
@@ -28,16 +31,25 @@ namespace Inmobiliaria.Presentacion
         {
             InitializeComponent();
             CargarComboPropietario();
+            webcam = new WebCam(this, AutoActivate: false, PbxImagen);
         }
         public FrmCargarPropiedad(int idSeleccionado)
         {
             InitializeComponent();
             CargarComboPropietario();
+            if (idSeleccionado != 0)
+            {
+                IdEditar = idSeleccionado;
+                //llamamos al metodo de carga datos
+                CargarDatosDeLaPropiedad();
+            }
+            webcam = new WebCam(this, AutoActivate: false, PbxImagen);
         }
         public FrmCargarPropiedad(Propietario propietario, int idSeleccionado)
         {
             InitializeComponent();
             CargarComboPropietario();
+            webcam = new WebCam(this, AutoActivate: false, PbxImagen);
             if (idSeleccionado != 0)
             {
                 IdEditar = idSeleccionado;
@@ -56,6 +68,8 @@ namespace Inmobiliaria.Presentacion
                 NumUpDownValor.Value = (decimal)propiedades.Valor;
                 ChkDisponible.Checked = propiedades.Disponibilidad;
                 CboPropietario.SelectedValue = propiedades.PropietarioId;
+                if (propiedades.Imagen != null)
+                    PbxImagen.Image = HelperInmobiliaria.convertirBytesAImagen(propiedades.Imagen);
 
             }
         }
@@ -77,7 +91,7 @@ namespace Inmobiliaria.Presentacion
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             //cerramos el formulario
-            this.Close();
+            this.MensajeDeAdvertenciaDeSalida();
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
@@ -90,8 +104,14 @@ namespace Inmobiliaria.Presentacion
                 propiedades.Valor = (double)NumUpDownValor.Value;
                 propiedades.Disponibilidad = ChkDisponible.Checked;
                 propiedades.PropietarioId = (int)CboPropietario.SelectedValue;
-                
-
+                //si hay una imagen definida la almacenamos en la propiedad correspondiente
+                if (PbxImagen.Image != null)
+                {
+                    propiedades.Imagen = HelperInmobiliaria.convertirImagenABytes(PbxImagen.Image);
+                    BtnCapturarFoto.Enabled = true;
+                }
+                else
+                    BtnCapturarFoto.Enabled = false;
                 //si el id del Cliente a editar es nulo agregamos un Cliente Nuevo a la tabla
                 if (IdEditar == null)
                     // agregamos el objeto Clientes a la Base De datos
@@ -109,6 +129,64 @@ namespace Inmobiliaria.Presentacion
                 this.Close();
 
             }
+        }
+
+        private void BtnExaminar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofdAbrirArchivo = new OpenFileDialog();
+            string filtro = "Todas las imágenes|*.jpg;*.gif;*.png;*.bmp;*.jpeg";
+            filtro += "|JPG (*.jpg)|*.jpg";
+            filtro += "|JPEG (*.jpeg)|*.jpeg";
+            filtro += "|GIF (*.gif)|*.gif";
+            filtro += "|PNG (*.png)|*.png";
+            filtro += "|BMP (*.bmp)|*.bmp";
+
+            ofdAbrirArchivo.Filter = filtro;
+            ofdAbrirArchivo.ShowDialog();
+
+            if (ofdAbrirArchivo.FileName != "")
+            {
+                PbxImagen.Image = new Bitmap(ofdAbrirArchivo.FileName);
+            }
+        }
+
+        private void BtnIniciarDetenerCamara_Click(object sender, EventArgs e)
+        {
+            if (BtnIniciarDetenerCamara.Text == "Iniciar cámara")
+            {
+                InicializarCamara();
+            }
+            else
+            {
+                DetenerCamara();
+            }
+        }
+
+        private void DetenerCamara()
+        {
+            webcam.Deinitalize();
+            BtnIniciarDetenerCamara.Text = "Iniciar cámara";
+            BtnCapturarFoto.Text = "Borrar foto";
+        }
+
+        private void InicializarCamara()
+        {
+            webcam.Initalize();
+            BtnIniciarDetenerCamara.Text = "Detener cámara";
+            BtnCapturarFoto.Text = "Capturar foto";
+            //RefrescarPaneles();
+            BtnCapturarFoto.Enabled = true;
+        }
+
+        private void BtnCapturarFoto_Click_1(object sender, EventArgs e)
+        {
+            if (BtnCapturarFoto.Text == "Borrar foto")
+            {
+                PbxImagen.Image = null;
+                BtnCapturarFoto.Enabled = false;
+            }
+            else
+                DetenerCamara();
         }
     }
 }

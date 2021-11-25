@@ -70,15 +70,15 @@ namespace Inmobiliaria.Presentacion
         }
         private void BtnNuevo_Click(object sender, EventArgs e)
         {
-            //var frmCargarPropietario = new FrmCargarPropietario();
-            //frmCargarPropietario.ShowDialog();
-            //ActualizarGrilla();
-            //Grid.CurrentCell = Grid.Rows[Grid.RowCount - 1].Cells[0];
+            var frmCargarPropietario = new FrmCargarPropietario();
+            frmCargarPropietario.ShowDialog();
+            ActualizarGrilla();
+            Grid.CurrentCell = Grid.Rows[Grid.RowCount - 1].Cells[0];
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.MensajeDeAdvertenciaDeSalida();
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)

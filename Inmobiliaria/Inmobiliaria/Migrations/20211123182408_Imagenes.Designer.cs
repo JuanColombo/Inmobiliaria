@@ -4,14 +4,16 @@ using Inmobiliaria.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Inmobiliaria.Migrations
 {
     [DbContext(typeof(InmobiliariaContext))]
-    partial class InmobiliariaContextModelSnapshot : ModelSnapshot
+    [Migration("20211123182408_Imagenes")]
+    partial class Imagenes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

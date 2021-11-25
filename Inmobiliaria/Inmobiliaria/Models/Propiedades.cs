@@ -19,6 +19,7 @@ namespace Inmobiliaria.Models
         [Required]
         public int PropietarioId { get; set; }
         public Propietario Propietario { get; set; }
+        public byte[] Imagen { get; set; }
 
     }
 }

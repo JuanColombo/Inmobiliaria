@@ -44,7 +44,7 @@ namespace Inmobiliaria.Core
             Image imagen;
             try
             {
-                using (ResourceReader rr = new ResourceReader(@"..\..\..\Recursos.resources"))
+                using (ResourceReader rr = new ResourceReader(@".\Recursos.resources"))
                 {
                     string tipoRecurso = "";
                     byte[] bytesArchivo;
@@ -59,7 +59,7 @@ namespace Inmobiliaria.Core
             catch
             { //si no encuentra una imagen, cuando se ejecuta por primera vez, o si borraron
               //accidentalmente el archivo de recursos, crea un nuevo archivo de recursos
-                using (ResourceWriter rw = new ResourceWriter(@"..\..\..\Recursos.resources"))
+                using (ResourceWriter rw = new ResourceWriter(@".\Recursos.resources"))
                 {
                     rw.AddResource("Sistema", "Inmobiliaria");
                 }
@@ -84,7 +84,7 @@ namespace Inmobiliaria.Core
             MemoryStream bitmapStream = new MemoryStream();
             Bitmap bmp = new Bitmap(imagenFondo);
             bmp.Save(bitmapStream, ImageFormat.Jpeg);
-            using (ResourceWriter rw = new ResourceWriter(@"..\..\..\Recursos.resources"))
+            using (ResourceWriter rw = new ResourceWriter(@".\Recursos.resources"))
             {
                 rw.AddResource(nombreImagen, bitmapStream);
             }

@@ -1,14 +1,10 @@
 ﻿using Inmobiliaria.Core;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 
-namespace  Inmobiliaria.Presentacion
+namespace Inmobiliaria.Presentacion
 {
     public partial class FrmParametros : Form
     {
