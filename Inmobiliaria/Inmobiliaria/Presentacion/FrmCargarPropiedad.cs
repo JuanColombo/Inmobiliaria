@@ -79,7 +79,8 @@ namespace Inmobiliaria.Presentacion
             using (var db = new InmobiliariaContext())
             {
                 var listaPropietarios = from propietario in db.Propietario
-                                   select new { id = propietario.Id, nombre = propietario.Apellido + " " + propietario.Nombre };
+                                   select new { id = propietario.Id, 
+                                                nombre = propietario.Apellido + " " + propietario.Nombre };
                 //cargamos el combo de tutores con los existentes en la base de datos
                 CboPropietario.DataSource = listaPropietarios.ToList();
                 CboPropietario.DisplayMember = "nombre";

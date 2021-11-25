@@ -61,7 +61,6 @@ namespace Inmobiliaria
             // 
             this.btnNuevoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevoCliente.BackColor = System.Drawing.Color.LightGreen;
-            this.btnNuevoCliente.ForeColor = System.Drawing.Color.Black;
             this.btnNuevoCliente.Location = new System.Drawing.Point(742, 74);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.Size = new System.Drawing.Size(147, 51);

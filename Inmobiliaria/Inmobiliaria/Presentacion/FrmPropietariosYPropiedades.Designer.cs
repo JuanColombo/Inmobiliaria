@@ -35,7 +35,6 @@
             this.LblBuscar = new System.Windows.Forms.Label();
             this.TxtBusqueda = new System.Windows.Forms.TextBox();
             this.gridPropiedades = new System.Windows.Forms.DataGridView();
-            this.BtnEliminarPropiedad = new System.Windows.Forms.Button();
             this.BtnEditarPropiedad = new System.Windows.Forms.Button();
             this.BtnAgregarPropiedad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridPropietarios)).BeginInit();
@@ -116,16 +115,6 @@
             this.gridPropiedades.TabIndex = 0;
             this.gridPropiedades.Text = "dataGridView1";
             // 
-            // BtnEliminarPropiedad
-            // 
-            this.BtnEliminarPropiedad.Location = new System.Drawing.Point(429, 417);
-            this.BtnEliminarPropiedad.Name = "BtnEliminarPropiedad";
-            this.BtnEliminarPropiedad.Size = new System.Drawing.Size(121, 30);
-            this.BtnEliminarPropiedad.TabIndex = 3;
-            this.BtnEliminarPropiedad.Text = "E&liminar Propiedad";
-            this.BtnEliminarPropiedad.UseVisualStyleBackColor = true;
-            this.BtnEliminarPropiedad.Click += new System.EventHandler(this.BtnEliminarPropiedad_Click);
-            // 
             // BtnEditarPropiedad
             // 
             this.BtnEditarPropiedad.Location = new System.Drawing.Point(263, 417);
@@ -153,7 +142,6 @@
             this.ClientSize = new System.Drawing.Size(951, 479);
             this.Controls.Add(this.BtnAgregarPropiedad);
             this.Controls.Add(this.BtnEditarPropiedad);
-            this.Controls.Add(this.BtnEliminarPropiedad);
             this.Controls.Add(this.gridPropiedades);
             this.Controls.Add(this.TxtBusqueda);
             this.Controls.Add(this.LblBuscar);
@@ -184,7 +172,6 @@
         private System.Windows.Forms.Label LblBuscar;
         private System.Windows.Forms.TextBox TxtBusqueda;
         private System.Windows.Forms.DataGridView gridPropiedades;
-        private System.Windows.Forms.Button BtnEliminarPropiedad;
         private System.Windows.Forms.Button BtnEditarPropiedad;
         private System.Windows.Forms.Button BtnAgregarPropiedad;
     }

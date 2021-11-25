@@ -119,7 +119,7 @@ namespace Inmobiliaria.Presentacion
         }
 
         private void BtnAgregarPropiedad_Click(object sender, EventArgs e)
-        {
+        {   
             var frmCargarPropiedad = new FrmCargarPropiedad(propietario);
             frmCargarPropiedad.ShowDialog();
             ActualizarGrillaPropiedades();
@@ -141,28 +141,6 @@ namespace Inmobiliaria.Presentacion
 
             //seleccionamos el registro editado
             gridPropietarios.CurrentCell = gridPropietarios.Rows[filaAEditar].Cells[0];
-        }
-
-        private void BtnEliminarPropiedad_Click(object sender, EventArgs e)
-        {
-            //obtenemos el id y nombre de la vacuna seleccionada en la grilla detalle
-            var idSeleccionado = gridPropiedades.ObtenerIdSeleccionado();
-            var nombreSeleccionado = gridPropiedades.CurrentRow.Cells[1].Value.ToString();
-            var nombrePropietario = gridPropietarios.CurrentRow.Cells[1].Value.ToString();
-            var idPropietario = gridPropietarios.ObtenerIdSeleccionado();
-            //preguntar si realmente desea eliminar a la vacuna seleccionada
-            DialogResult respuesta = MessageBox.Show($"¿Está seguro que desea quitar a la vacuna {nombreSeleccionado} del propietario {nombrePropietario}?", "Quitar propiedad ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            //si responde que si, instanciamos al objeto dbcontext, y eliminamos el Calendario a través del id que obtuvimos
-            if (respuesta == DialogResult.Yes)
-            {
-                using (var db = new InmobiliariaContext())
-                {
-                    var detalle = db.Propiedades.Find(idSeleccionado);
-                    db.Propiedades.Remove(detalle);
-                    db.SaveChanges();
-                }
-                ActualizarGrillaPropiedades();
-            }
         }
     }
 }
