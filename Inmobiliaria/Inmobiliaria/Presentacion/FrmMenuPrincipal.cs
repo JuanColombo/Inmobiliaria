@@ -52,7 +52,7 @@ namespace Inmobiliaria
             //si responde que si, instanciamos al objeto dbContext y eliminamos el tutor a traves del id que obtuvimos.
             if (respuesta == DialogResult.Yes)
             {
-                this.Close();
+                Application.Exit();
             }
         }
 

@@ -109,7 +109,6 @@ namespace Inmobiliaria.Presentacion
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(594, 80);
             this.TxtCodigo.TabIndex = 6;
-            this.TxtCodigo.TextChanged += new System.EventHandler(this.TxtCodigo_TextChanged);
             // 
             // label4
             // 

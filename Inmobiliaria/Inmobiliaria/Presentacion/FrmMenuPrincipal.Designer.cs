@@ -61,6 +61,7 @@ namespace Inmobiliaria
             // 
             this.btnNuevoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevoCliente.BackColor = System.Drawing.Color.LightGreen;
+            this.btnNuevoCliente.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnNuevoCliente.Location = new System.Drawing.Point(742, 74);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.Size = new System.Drawing.Size(147, 51);
@@ -73,6 +74,7 @@ namespace Inmobiliaria
             // 
             this.BtnNuevoPropietario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnNuevoPropietario.BackColor = System.Drawing.Color.LightGreen;
+            this.BtnNuevoPropietario.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnNuevoPropietario.Location = new System.Drawing.Point(742, 131);
             this.BtnNuevoPropietario.Name = "BtnNuevoPropietario";
             this.BtnNuevoPropietario.Size = new System.Drawing.Size(147, 51);
@@ -85,6 +87,7 @@ namespace Inmobiliaria
             // 
             this.BtnNuevaPropiedad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnNuevaPropiedad.BackColor = System.Drawing.Color.LightGreen;
+            this.BtnNuevaPropiedad.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnNuevaPropiedad.Location = new System.Drawing.Point(742, 188);
             this.BtnNuevaPropiedad.Name = "BtnNuevaPropiedad";
             this.BtnNuevaPropiedad.Size = new System.Drawing.Size(147, 51);
@@ -98,6 +101,7 @@ namespace Inmobiliaria
             this.BtnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnSalir.BackColor = System.Drawing.Color.LightGreen;
             this.BtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnSalir.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnSalir.Location = new System.Drawing.Point(742, 303);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(147, 51);
@@ -206,8 +210,10 @@ namespace Inmobiliaria
             // 
             // MnuParametros
             // 
+            this.MnuParametros.Checked = true;
+            this.MnuParametros.CheckState = System.Windows.Forms.CheckState.Checked;
             this.MnuParametros.Name = "MnuParametros";
-            this.MnuParametros.Size = new System.Drawing.Size(134, 22);
+            this.MnuParametros.Size = new System.Drawing.Size(180, 22);
             this.MnuParametros.Text = "Parametros";
             this.MnuParametros.Click += new System.EventHandler(this.parametrosToolStripMenuItem_Click);
             // 
@@ -271,6 +277,7 @@ namespace Inmobiliaria
             // 
             this.btnPropietariosyPropiedades.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPropietariosyPropiedades.BackColor = System.Drawing.Color.LightGreen;
+            this.btnPropietariosyPropiedades.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPropietariosyPropiedades.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnPropietariosyPropiedades.Location = new System.Drawing.Point(742, 246);
             this.btnPropietariosyPropiedades.Name = "btnPropietariosyPropiedades";

@@ -37,6 +37,8 @@
             this.gridPropiedades = new System.Windows.Forms.DataGridView();
             this.BtnEditarPropiedad = new System.Windows.Forms.Button();
             this.BtnAgregarPropiedad = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridPropietarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPropiedades)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +48,7 @@
             this.gridPropietarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPropietarios.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridPropietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridPropietarios.Location = new System.Drawing.Point(12, 12);
+            this.gridPropietarios.Location = new System.Drawing.Point(12, 36);
             this.gridPropietarios.Name = "gridPropietarios";
             this.gridPropietarios.ReadOnly = true;
             this.gridPropietarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -107,7 +109,7 @@
             this.gridPropiedades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPropiedades.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridPropiedades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridPropiedades.Location = new System.Drawing.Point(12, 223);
+            this.gridPropiedades.Location = new System.Drawing.Point(12, 247);
             this.gridPropiedades.Name = "gridPropiedades";
             this.gridPropiedades.ReadOnly = true;
             this.gridPropiedades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -117,7 +119,7 @@
             // 
             // BtnEditarPropiedad
             // 
-            this.BtnEditarPropiedad.Location = new System.Drawing.Point(263, 417);
+            this.BtnEditarPropiedad.Location = new System.Drawing.Point(262, 437);
             this.BtnEditarPropiedad.Name = "BtnEditarPropiedad";
             this.BtnEditarPropiedad.Size = new System.Drawing.Size(105, 30);
             this.BtnEditarPropiedad.TabIndex = 2;
@@ -127,7 +129,7 @@
             // 
             // BtnAgregarPropiedad
             // 
-            this.BtnAgregarPropiedad.Location = new System.Drawing.Point(82, 417);
+            this.BtnAgregarPropiedad.Location = new System.Drawing.Point(81, 437);
             this.BtnAgregarPropiedad.Name = "BtnAgregarPropiedad";
             this.BtnAgregarPropiedad.Size = new System.Drawing.Size(123, 30);
             this.BtnAgregarPropiedad.TabIndex = 1;
@@ -135,11 +137,33 @@
             this.BtnAgregarPropiedad.UseVisualStyleBackColor = true;
             this.BtnAgregarPropiedad.Click += new System.EventHandler(this.BtnAgregarPropiedad_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 28);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Propietarios";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(12, 216);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 28);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Propiedades";
+            // 
             // FrmPropietariosYPropiedades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(951, 479);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnAgregarPropiedad);
             this.Controls.Add(this.BtnEditarPropiedad);
             this.Controls.Add(this.gridPropiedades);
@@ -174,5 +198,7 @@
         private System.Windows.Forms.DataGridView gridPropiedades;
         private System.Windows.Forms.Button BtnEditarPropiedad;
         private System.Windows.Forms.Button BtnAgregarPropiedad;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
